@@ -11,27 +11,27 @@ const app = express();
 app.use(express.static('public'));
 
 app.get("/", (req, res)=>{
-    res.sendFile(__dirname+"/electronic/index.html");
+    res.sendFile(__dirname+"/index.html");
 })
 
 app.get("/index.html", (req, res)=>{
-    res.sendFile(__dirname+"/electronic/index.html");
+    res.sendFile(__dirname+"/index.html");
 })
 
 app.get("/about.html",(req, res)=>{
-    res.sendFile(__dirname+"/electronic/about.html");
+    res.sendFile(__dirname+"/about.html");
 })
 
 app.get("/contact.html",(req, res)=>{
-    res.sendFile(__dirname+"/electronic/contact.html");
+    res.sendFile(__dirname+"/contact.html");
 })
 
 app.get("/login.html",(req, res)=>{
-    res.sendFile(__dirname+"/electronic/login.html");
+    res.sendFile(__dirname+"/login.html");
 })
 
 app.get("/register.html",(req, res)=>{
-    res.sendFile(__dirname+"/electronic/register.html");
+    res.sendFile(__dirname+"/register.html");
 })
 
 app.listen(1234, ()=>{
